@@ -25,3 +25,16 @@ a {
    margin: 0 auto;
    padding: 0 15px;
 }
+.title {
+   font-size: 48px;
+   @extend %roboto-700;
+   line-height: 1.3em;
+   text-align: center;
+   color: $title;
+   margin-bottom: 10px;
+}
+.text {
+   text-align: center;
+   max-width: 570px;
+   margin: 0 auto;
+}
