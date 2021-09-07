@@ -1,0 +1,80 @@
+.slider-top {
+   background-color: $bg;
+   background-image: url(../images/slider-top-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: left top;
+   padding: 0 calc(50% - 745px);
+
+   &__inner {
+      padding-top: 70px;
+      position: relative;
+   }
+
+   &__item {
+      display: flex !important;
+      justify-content: space-between;
+   }
+
+   &__content {
+      max-width: 570px;
+      width: 100%;
+      padding-top: 115px;
+      margin-left: 145px;
+   }
+
+   &__title {
+      @extend %roboto-700;
+      color: $title;
+      font-size: 58px;
+      line-height: 68px;
+   }
+
+   &__text {
+      max-width: 480px;
+      margin: 20px 0 50px;
+   }
+
+   &__btn {
+      @extend %btn;
+   }
+
+   .slick-dots {
+      position: absolute;
+      display: flex;
+      bottom: 35px;
+      left: 45%;
+
+      li {
+         position: relative;
+         padding: 0 3px;
+
+         &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 6px;
+            height: 6px;
+            background-color: $default;
+            border-radius: 50%;
+         }
+
+         button {
+            padding: 0;
+            margin: 0;
+            font-size: 0;
+            border: none;
+            width: 27px;
+            height: 27px;
+            background-color: transparent;
+         }
+      }
+
+      .slick-active {
+         border: 1px solid $accent;
+         border-radius: 50%;
+      }
+   }
+}
