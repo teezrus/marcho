@@ -12,7 +12,19 @@
 <body>
    {% include 'app/module/_header/_header.html' %}
    <main class="main">
-   {% include 'app/module/_top/_top.html' %}
+        <section class="top" style="background-image: url(images/top-bg.jpg);">
+         <h2 class="top__title title">LOG IN</h2>
+         <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+               <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Home</a>
+               </li>
+               <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Log in</a>
+               </li>
+            </ul>
+         </div>
+      </section>
    {% include 'app/module/_login/_login.html' %}
    </main>
    {% include 'app/module/_footer/_footer.html' %}

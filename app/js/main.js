@@ -95,6 +95,13 @@ $(function () {
       countdownSeconds.innerHTML = seconds;
    }, 1000);
 
+   $('.menu-btn,.menu__item-link').on('click', function () {
+      $('.menu__list').toggleClass('menu__list--active');
+      $('.menu-btn').toggleClass('active');
+   });
 
+   $('.footer-top__nav--slide').on('click', function () {
+      $(this).next().slideToggle();
+   });
 
 });

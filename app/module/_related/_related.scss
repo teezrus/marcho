@@ -1,0 +1,21 @@
+.related {
+   padding: 50px 0 110px;
+
+   &__title {
+      margin-bottom: 50px;
+   }
+
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 30px;
+   }
+
+   .product-item__title {
+      margin: 10px 0;
+   }
+
+   .product-item__box {
+      margin-bottom: 10px;
+   }
+}

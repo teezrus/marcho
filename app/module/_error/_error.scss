@@ -1,0 +1,29 @@
+
+.error {
+   padding: 110px 0 120px;
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__content {
+      margin-top: 140px;
+   }
+
+   &__title {
+      color: #28384f;
+      font-size: 48px;
+      @extend %roboto-700;
+      margin-bottom: 30px;
+   }
+
+   &__text {
+      max-width: 470px;
+      margin-bottom: 60px;
+   }
+
+   &__link {
+      @extend %btn;
+   }
+}
