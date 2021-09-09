@@ -1,4 +1,3 @@
-
 .error {
    padding: 110px 0 120px;
 
@@ -16,6 +15,7 @@
       font-size: 48px;
       @extend %roboto-700;
       margin-bottom: 30px;
+      line-height: 1.3em;
    }
 
    &__text {
@@ -25,5 +25,11 @@
 
    &__link {
       @extend %btn;
+   }
+
+   &__img {
+      width: 600px;
+      height: 300px;
+      object-fit: contain;
    }
 }

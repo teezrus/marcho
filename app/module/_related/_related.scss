@@ -11,11 +11,55 @@
       grid-column-gap: 30px;
    }
 
+   .star {
+      margin: 0 auto;
+   }
+
+   .product-item {
+      text-align: center;
+
+      &__price {
+         display: flex;
+         justify-content: center;
+         @extend %roboto-500;
+
+      }
+
+      &__price-new,
+      &__price-old {
+         margin: 0 10px;
+      }
+
+      &__price-new {
+         color: $title;
+      }
+
+      &__price-old {
+         @extend %roboto-400;
+         display: block;
+         text-decoration: line-through;
+
+      }
+
+      &__title {
+         color: $title;
+         font-size: 22px;
+         @extend %roboto-400;
+         margin: 20px 0;
+      }
+   }
+
    .product-item__title {
       margin: 10px 0;
    }
 
    .product-item__box {
       margin-bottom: 10px;
+   }
+
+   .product-item__img {
+      width: 270px;
+      height: 330px;
+      object-fit: contain;
    }
 }

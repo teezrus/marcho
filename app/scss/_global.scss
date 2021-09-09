@@ -43,6 +43,7 @@ button {
    @extend %roboto-700;
    line-height: 1.3em;
    text-align: center;
+   text-transform: uppercase;
    color: $title;
    margin-bottom: 10px;
 }

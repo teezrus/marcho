@@ -1,7 +1,5 @@
 .blog {
    padding: 50px 0 165px;
-   background-repeat: no-repeat;
-   background-position-y: center;
 
    &__items {
       display: flex;
@@ -34,10 +32,16 @@
 
    &__item-linkimg {
       display: block;
-      height: 288px;
+      height: 290px;
       margin-bottom: 29px;
       overflow: hidden;
 
+   }
+
+   &__item-img {
+      width: 370px;
+      height: 290px;
+      object-fit: cover;
    }
 
    &__item-box {

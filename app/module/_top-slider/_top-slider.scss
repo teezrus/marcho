@@ -1,9 +1,5 @@
 .slider-top {
    background-color: $bg;
-   background-image: url(../images/slider-top-bg.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: left top;
    padding: 0 calc(50% - 745px);
 
    &__inner {
@@ -14,6 +10,11 @@
    &__item {
       display: flex !important;
       justify-content: space-between;
+   }
+
+   &__img {
+      margin-right: 20px;
+      margin-bottom: 20px;
    }
 
    &__content {
