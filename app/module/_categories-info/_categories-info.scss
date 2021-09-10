@@ -95,3 +95,50 @@
       }
    }
 }
+
+@media (max-width:1200px) {
+   .info {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      &__item {
+         margin: 20px;
+      }
+   }
+
+   .categories {
+      &__items {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: auto;
+
+      }
+
+      &__item {
+         &:nth-child(1) {
+            grid-row: auto;
+         }
+
+         &:nth-child(2) {
+            grid-column: auto;
+         }
+      }
+   }
+
+}
+
+@media (max-width:768px) {
+   .title {
+      font-size: 30px;
+   }
+
+   .categories {
+      &__items {
+         grid-template-columns: repeat(1, 1fr);
+
+      }
+
+      &__item {
+         min-height: 300px;
+      }
+   }
+}

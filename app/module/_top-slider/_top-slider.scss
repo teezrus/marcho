@@ -22,6 +22,7 @@
       width: 100%;
       padding-top: 115px;
       margin-left: 145px;
+      margin-right: 20px;
    }
 
    &__title {
@@ -44,7 +45,8 @@
       position: absolute;
       display: flex;
       bottom: 35px;
-      left: 45%;
+      left: 50%;
+      transform: translateX(-50%);
 
       li {
          position: relative;
@@ -76,6 +78,79 @@
       .slick-active {
          border: 1px solid $accent;
          border-radius: 50%;
+      }
+   }
+}
+
+@media (max-width:1200px) {
+   .slider-top {
+
+      &__content {
+         padding-top: 50px;
+         margin-left: 20px;
+         margin-right: 20px;
+         margin-bottom: 40px;
+      }
+
+      &__img {
+         width: 40%;
+         object-fit: contain;
+         height: 400px;
+      }
+   }
+}
+
+@media (max-width:768px) {
+   .slider-top {
+      &__inner {
+         padding-top: 20px;
+      }
+
+      &__content {
+         padding-top: 10px;
+         margin-left: 20px;
+         margin-right: 20px;
+         margin-bottom: 10px;
+         max-width: 320px;
+      }
+
+      &__title {
+         font-size: 23px;
+         line-height: 1.3em;
+      }
+
+      &__btn {
+         padding: 10px 20px;
+      }
+
+      &__img {
+         width: 40%;
+         object-fit: contain;
+         height: 250px;
+         margin-right: 10px;
+      }
+
+
+      .slick-dots {
+         bottom: 15px;
+      }
+   }
+}
+
+@media (max-width:480px) {
+   .slider-top {
+      .slider-top__img {
+         display: none;
+      }
+
+      &__content {
+         margin: 0 auto;
+         margin-bottom: 70px;
+         text-align: center;
+      }
+
+      &__text {
+         margin-bottom: 20px;
       }
    }
 }

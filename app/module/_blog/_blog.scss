@@ -3,13 +3,14 @@
 
    &__items {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       flex-wrap: wrap;
       margin-top: 55px;
    }
 
    &__item {
       max-width: 370px;
+      margin: 10px;
       width: 100%;
       border: 1px solid #e8e8e8;
       transition: all .3s;
@@ -103,5 +104,23 @@
       height: 8px;
       right: -15px;
       top: 8px;
+   }
+}
+
+@media (max-width:480px) {
+   .container {
+      padding: 0 5px;
+   }
+
+   .blog {
+      padding: 20px 0;
+
+      &__item-box {
+         padding: 10px;
+      }
+
+      &__item-title {
+         font-size: 16px;
+      }
    }
 }

@@ -440,3 +440,157 @@
    }
 
 }
+
+@media (max-width:1200px) {
+
+   .person,
+   .latest-post {
+      display: none;
+   }
+
+   .blog-page {
+      &__inner {
+         flex-direction: column-reverse;
+      }
+
+      &__content {
+         max-width: 100%;
+      }
+
+      &__img {
+         max-width: 100%;
+         object-fit: cover;
+      }
+
+      .filter__item {
+         display: none;
+      }
+
+      .filter-search {
+         display: block;
+      }
+   }
+
+}
+
+@media (max-width:768px) {
+   .blog-page {
+      &__img {
+         max-width: 100%;
+         object-fit: cover;
+         height: 340px;
+      }
+   }
+
+   .blog-one__text {
+      padding: 10px;
+   }
+
+   .blog-one__info-link {
+      margin-right: 20px;
+   }
+
+   .blog-one__tags a {
+      display: block;
+   }
+}
+
+@media (max-width:480px) {
+   .blog-page {
+      padding: 20px 0;
+
+      &__img {
+         max-width: 100%;
+         object-fit: cover;
+         height: 200px;
+      }
+
+      &__item-box {
+         padding: 10px;
+      }
+
+      &__box {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 10px;
+      }
+
+      .filter-search__input {
+         background-color: #fafafa;
+         border: none;
+         height: 50px;
+         width: 200px;
+         padding: 0 5px 0 15px;
+      }
+
+      .filter__item {
+         padding: 20px;
+      }
+
+      .blog-page__slider .slick-next {
+         right: 10px;
+      }
+
+      .blog-page__slider .slick-prev {
+         left: 10px;
+      }
+   }
+
+   .blog-one__info {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .blog-one__box {
+      flex-direction: column;
+
+   }
+
+   .blog-one__tags a {
+      display: inline-block;
+   }
+
+   .blog-one__author {
+      display: block;
+   }
+
+   .blog-one__author-img {
+      float: left;
+   }
+
+   .blog-one__content {
+      .comments {
+         display: block;
+      }
+
+      .comments__img {
+         float: left;
+      }
+   }
+
+   .comments__content-top {
+      flex-direction: column;
+   }
+
+   .comments__content-data::before {
+      display: none;
+   }
+
+   .comments__content-data {
+      padding-left: 0;
+
+   }
+
+   .comments-form__box-input {
+      flex-direction: column;
+   }
+
+   .comments-form__text-input {
+      max-width: 100%;
+      margin-bottom: 10px;
+   }
+
+   .comments-form__textarea {
+      height: 180px;
+   }
+}

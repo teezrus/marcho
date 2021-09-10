@@ -33,3 +33,38 @@
       object-fit: contain;
    }
 }
+
+@media(max-width:1200px) {
+
+   .error {
+      padding: 20px 0;
+
+      &__content {
+         margin-top: 20px;
+      }
+
+      &__text {
+         margin-bottom: 40px;
+      }
+
+
+      &__img {
+         width: 440px;
+      }
+   }
+
+}
+
+@media(max-width:1200px) {
+   .error {
+      &__img {
+         display: none;
+      }
+
+      &__title {
+         font-size: 30px;
+         margin-bottom: 10px;
+      }
+
+   }
+}

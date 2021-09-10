@@ -15,6 +15,14 @@ $(function () {
       $($(this).attr('href')).addClass('product-tabs__content-item--active');
 
    })
+   $('.button-filters').on('click', function () {
+      $('.shop__filters').toggleClass('shop__filters--active');
+      $('.shop-content__inner').toggleClass('shop-content__inner--active');
+   });
+   $('.filter-price__btn-apply').on('click', function () {
+      $('.shop__filters').removeClass('shop__filters--active');
+      $('.shop-content__inner').toggleClass('shop-content__inner--active');
+   });
 
    $('.product-slide__small').slick({
       asNavFor: '.product-slide__big',
