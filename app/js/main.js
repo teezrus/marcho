@@ -31,6 +31,12 @@ $(function () {
       slidesToScroll: 1,
       vertical: true,
       draggable: false,
+      responsive: [{
+         breakpoint: 1201,
+         settings: {
+            vertical: false,
+         }
+      }, ]
    });
    $('.product-slide__big').slick({
       asNavFor: '.product-slide__small',

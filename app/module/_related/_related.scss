@@ -63,3 +63,41 @@
       object-fit: contain;
    }
 }
+
+@media (max-width:1024px) {
+   .related {
+      .related__items {
+         grid-template-columns: repeat(3, 1fr);
+      }
+
+      .product-item__img {
+         margin: 0 auto;
+         height: 275px;
+      }
+   }
+}
+
+@media (max-width:768px) {
+   .related {
+      .related__items {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+   }
+}
+
+@media (max-width:480px) {
+   .related {
+      .related__items {
+         grid-template-columns: repeat(1, 1fr);
+      }
+
+      .product-item {
+         margin-bottom: 40px;
+      }
+
+      .product-item__img {
+         height: 210px;
+      }
+   }
+}
